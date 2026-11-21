@@ -19,10 +19,10 @@ class Solution {
         ListNode prev=null;
         ListNode curr=slow;
         while(curr!=null){
-            ListNode nextNode=curr.next;
+            ListNode nextnode=curr.next;
             curr.next=prev;
             prev=curr;
-            curr=nextNode;
+            curr=nextnode;
         }
         ListNode first=head;
         ListNode sec=prev;
